@@ -1,0 +1,91 @@
+html {
+  font-size: 10px;
+  background: url(https://i.imgur.com/TdMw2ME.jpg) bottom center;
+  background-size: cover;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius:1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  text-shadow: 0 0 1rem #289dc0;
+  z-index:5;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #0391bd;
+  text-shadow: 0 0 1rem #010d11;
+}
+
+#welcome-title{
+  position: absolute;
+  top:10%;
+  left:10%;
+  background: rgba(0,0,0,0.6);
+  color:rgb(243, 243, 243);
+  text-align:center;
+  justify-content: center;
+  text-shadow: 0 0 1rem #289dc0;
+  z-index: 3;
+  border: 4px inset rgba(0, 0, 0, 0.5);
+  padding:4px;
+  width:80%;
+  border-top-left-radius:40px;
+  border-bottom-right-radius: 40px;
+}
+
+h1, h2 {
+  font-family:cursive;
+}
+
+#instructions {
+  color:rgb(243, 243, 243);
+  text-shadow: 0 0 1rem #010d11;
+  font-size: 1.5rem;
+  position: absolute;
+  left:30%;
+  bottom:10%;
+  width:40%;
+  border-top-left-radius:20px;
+  border-bottom-right-radius: 20px;
+  border: 4px inset rgba(0, 0, 0, 0.5);
+  background: rgba(0,0,0,0.6);
+  padding-left:20px;
+  text-align:center;
+  z-index: 2;
+  }
